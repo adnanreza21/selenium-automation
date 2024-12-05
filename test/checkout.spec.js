@@ -32,12 +32,12 @@ const base_url = url.base_url;
   } catch (error) {
     console.error('Error during login:', error);
   }
+
   try {
 
     let buttonAddCart1 = await driver.findElement(By.name('add-to-cart-sauce-labs-fleece-jacket'));
     let buttonAddCart2 = await driver.findElement(By.name('add-to-cart-sauce-labs-onesie'));
     let buttonToCart = await driver.findElement(By.css('.shopping_cart_link'));
-
 
     await buttonAddCart1.click();
     await buttonAddCart2.click();
